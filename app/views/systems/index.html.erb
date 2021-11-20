@@ -1,0 +1,19 @@
+<%= content_for :title do "Systems" end %>
+
+<div class="systems container mt-4">
+  <table class="table table-striped text-center table-bordered">
+    <thead class="bg-primary text-light">
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Manufactured Date</th>
+        <th>Status</th>
+        <th class="actions">Actions</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<%= content_for :js do %>
+  <%= javascript_pack_tag "systems" %>
+<% end %>

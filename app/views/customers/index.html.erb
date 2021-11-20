@@ -1,0 +1,20 @@
+<%= content_for :title do "Customers" end %>
+
+<div class="customers container mt-4">
+  <table class="table table-striped text-center table-hover table-bordered">
+    <thead class="bg-primary text-light">
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Mobile No</th>
+        <th>Address</th>
+        <th>State</th>
+        <th class="actions">Actions</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<%= content_for :js do %>
+  <%= javascript_pack_tag "customers" %>
+<% end %>

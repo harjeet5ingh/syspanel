@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Syspanel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_pack_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+  </head>
+
+  <body>
+    <%= render partial: "layouts/header" %>
+    <div class="display-6 text-center my-4 py-2">
+      <%= yield :title %>
+    </div>
+
+    <%= yield %>
+    <%= yield :js %>
+  </body>
+</html>
