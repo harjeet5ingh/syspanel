@@ -13,7 +13,7 @@ end
 unless System.exists?
   records = []
   (1..13).reverse_each do |idx|
-    records << { id: idx, name: idx-1, manufactured_date: Date.today - (30.days - idx.days) }
+    records << { id: idx, name: idx-1, manufactured_date: 30.days.ago - idx.days }
   end
 
   System.create(records)
